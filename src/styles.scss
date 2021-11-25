@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --main-color: #2F5D62;
+    --button-color: #5E8B7E;
+    --input-diabled-color : #A7C4BC;
+    --border-color: #a7c4bc66;
+}
+
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.btn:focus,
+.uneditable-input:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: 0 1px 1px rgba(221, 219, 219, 0.075) inset, 0 0 8px rgba(243, 242, 242, 0.6) !important;
+    outline: 0 none !important;
+}
+
+.form-select:disabled,
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="datetime"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="date"]:disabled,
+input[type="month"]:disabled,
+input[type="time"]:disabled,
+input[type="week"]:disabled,
+input[type="number"]:disabled,
+input[type="email"]:disabled,
+input[type="url"]:disabled,
+input[type="search"]:disabled,
+input[type="tel"]:disabled,
+input[type="color"]:disabled {
+    background-color: var(-input-diabled-color) !important;
+    color: #000000ad;
+}
+
+body{
+    font-weight: 300;
+}
+
+::placeholder {
+    color: rgb(190, 187, 187) !important;
+    opacity: 0.5;
+}
+
+.form-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-container-center{
+    width: 400px;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn-custom{
+    color: white !important;
+    background-color: var(--button-color) !important;
+    &:hover{
+        background-color: var(--main-color) !important;
+    }
+}
+
+.text-btn{
+    font-weight: bold;
+    color: var(--button-color);
+    &:hover{
+        cursor: pointer;
+        color: var(--main-color);
+    }
+}
+
+.signinup{
+    width: 100%;
+}
